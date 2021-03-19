@@ -7,6 +7,7 @@
  <link rel="stylesheet"href="style.css">
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="frontvideo.js"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <head>
@@ -26,19 +27,19 @@
      
 
  <div id="particles-js" >
-  <nav class="navbar navbar-fixed-top navbar-sticky-top navbar-expand-lg navbar-light ">
-    <ul class="nav nav-pills ml-auto text-success">
+  <nav class="navbar fixed-top navbar-sticky-top navbar-expand-lg navbar-light ">
+    <ul class="nav  ml-auto text-success">
       <li class="nav-item dropdown text-success">
         <a class="nav-link text-success dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Home
         </a>
         <div class="dropdown-menu text-success" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item text-success" href="#">About us</a>        
-          <a class="dropdown-item text-success" href="#">Projects</a>
-          <a class="dropdown-item text-success" href="#">Contact us</a>
+          <a class="dropdown-item text-success" href="#AboutUs">About us</a>        
+          <a class="dropdown-item text-success" href="#Projects">Projects</a>
+          <a class="dropdown-item text-success" href="#ContactUs">Contact us</a>
       </li>
         <li class="nav-item text-success">
-          <a class="nav-link text-success " href="#">Blog</a>
+          <a class="nav-link text-success " href="https://www.google.com/search?q=navbar+change+color+on+scroll&oq=navbar+change+colo&aqs=chrome.2.0l3j69i57j0l2j69i61l2.7487j0j7&sourceid=chrome&ie=UTF-8">Blog</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-success" href="#">Resources</a>
@@ -48,6 +49,7 @@
           </li>
     </ul>
   </nav>
+  
   <div class="text-center logo">
     <img src="output-onlinepngtools.png">
  
@@ -61,21 +63,24 @@
           </div>
 
 
+
   
-  <div class="mainbody">
+  <div class="mainbody"id="AboutUs">
     <h2 class="font-weight-Normal text-center">  
       About Us
     </h2>
-    <img src="programmer.png" alt=""width="70"height="90">
+    <img  class="rounded mx-auto d-block"src="programmer.png" alt=""width="70"height="90">
    
-<h5 class="font-weight-bold  greencolor text-center">Programming club UIET(PU),Chandigarh</h5>
+<h5 class="font-weight-bold  text-success text-center">Programming club UIET</h5>
   <div class="icon">
-<a href="https://github.com/pclubuiet"><i class="fa fa-github-square greencolor fa-2x "></i></a>
-<a href="https://www.facebook.com/pclubuiet/"><i class="fa fa-facebook-square fa-2x greencolor"></i></a>
-<a href="https://twitter.com/pclubuiet"><i class="fa fa-twitter-square fa-2x greencolor"></i></a>
-<a href="https://www.instagram.com/pclubuiet/"><i class="fab fa-instagram-square fa-2x greencolor"></i></a>
-<a href="mailto:pclubuiet@gmail.com"><i class="fa fa-envelope-square fa-2x greencolor" ></i></a>
-<a href="https://www.youtube.com/channel/UCX57TDjAW9ssGEdTG_u4Fyg"><i class="fa fa-youtube-play  fa-2x greencolor"></i></a>
+<a href="https://github.com/pclubuiet"><i class="fa fa-github-square text-success fa-2x text-center "></i></a>
+<a href="https://www.facebook.com/pclubuiet/"><i class="fa fa-facebook-square fa-2x text-success text-center"></i></a>
+<a href="https://twitter.com/pclubuiet"><i class="fa fa-twitter-square fa-2x text-success text-center"></i></a>
+<a href="https://www.instagram.com/pclubuiet/"><i class="fab fa-instagram-square fa-2x text-success text-center"></i></a>
+<a href="mailto:pclubuiet@gmail.com"><i class="fa fa-envelope-square fa-2x text-success text-center" ></i></a>
+<a href="https://www.youtube.com/channel/UCX57TDjAW9ssGEdTG_u4Fyg"><i class="fa fa-youtube-play  fa-2x text-success text-center"></i></a>
+
+
   </div>
 
 
@@ -97,110 +102,171 @@ Although the club has been functioning quite well as compared to other clubs, st
 
     </p>
 </div>
-    <div class="container">
-
+<div id="Projects">
 <h2 class="font-weight-Normal text-center mt-7 mb-5">Projects</h2>
-<div class="container">
-  <div class="row ">
-    <div class="card " style="width: 50%;">
-    <div class="card-body ">
-      <h4 class="font-weight-Normal text-center">hacktoberfest</h4>
-      <p class="font-weight-light text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quas labore numquam ducimus soluta perferendis libero provident assumenda. Repellat odio cum esse aut optio quis, nostrum doloremque mollitia quo neque.</p>
-    </div>
-    </div>
-    <div class="card" style="width: 50%;">
-    <div class=" card-body">
-      <h4 class="font-weight-Normal text-center">SFD</h4>
-      <p class="font-weight-light text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quas labore numquam ducimus soluta perferendis libero provident assumenda. Repellat odio cum esse aut optio quis, nostrum doloremque mollitia quo neque.</p>
-    </div>
-    </div>
-  </div>
-  
-  <div class="row mt-2 mb-4">
-    <div class="card" style="width: 50%;">
-    <div class="card-body">
-      <h4 class="font-weight-Normal text-center">Covid-19 Detector</h4>
-      <p class="font-weight-light text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quas labore numquam ducimus soluta perferendis libero provident assumenda. Repellat odio cum esse aut optio quis, nostrum doloremque mollitia quo neque.</p>
-    </div>
-    </div>
-    <div class="card" style="width: 50%;">
-    <div class=" card-body">
-      <h4 class="font-weight- Normal text-center">PSoC</h4>
-      <p class="font-weight-light text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quas labore numquam ducimus soluta perferendis libero provident assumenda. Repellat odio cum esse aut optio quis, nostrum doloremque mollitia quo neque.</p>
-    </div>
-    </div>
-  </div>
-</div>
-
-
-</div>
-  </div>
+<div class="main">
  
-    <h2 class="font-weight-Normal text-center mt-5 mb-5">Contact us</h2>
-    <div class="contactus">
-    <div class=row>
-      <div class="card ml-2">
-        <div class="card-body">
-        <h4 class="text-center" >Gurnameh Singh</h4>
-        <p class="text-center">Core Team Member</p>
-        <div class="text-center mb-4">
-          <i class="fa fa-envelope-square greencolor  fa-2x "aria-hidden="true"></i>
-        </div>
-          </div>
-      </div>
-        <div class="card ml-2">
-          <div class="card-body">
-        <h4 class="text-center">Archit Uniyal</h4>
-        <p class="text-center">Core Team Member</p>
-        <div class="text-center mb-3">
-          <i class="fa fa-envelope-square greencolor  fa-2x "aria-hidden="true"></i>
-          </div>
-          </div>
-      </div>
-
-      <div class="card ml-2">
-        <div class="card-body">
-        <h4 class="text-center" >Ashwani Rathee</h4>
-        <p class="text-center">Core Team Member</p>
-        <div class="text-center mb-4">
-        <i class="fa fa-envelope-square greencolor  fa-2x "aria-hidden="true"></i>
-        </div>
-      </div>
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="cardss">
       
+        <div class="card_content">
+          <h2 class="card_title text-center text-success">hacktoberfest</h2>
+          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptatem sint facilis, repellendus distinctio quia accusamus quae, veniam aliquid reprehenderit optio necessitatibus molestiae, facere et ut hic. Distinctio, est ea.</p>
+          <div class="text-center mt-4">
+            <a href="https://github.com/pclubuiet/Hacktoberfest-2k19" class="btn btn-success  "> &lt;/&gt; Source code</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="cardss">
+       
+        <div class="card_content">
+          <h2 class="card_title text-center text-success">Software freedom Day</h2>
+          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, quibusdam vitae eum ipsum laboriosam culpa accusantium sequi voluptatum provident. Eum inventore magnam quibusdam numquam et amet nobis nemo neque alias.</p>
+          <div class="text-center mt-4">
+            <a href="https://github.com/pclubuiet/sfd19-slides" class="btn btn-success  ">&lt;/&gt; Source code</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="cardss">
+  
+        <div class="card_content">
+          <h2 class="card_title text-center text-success">PSoC</h2>
+          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium alias dolorum quidem inventore totam rerum aperiam sunt cum, illum, cupiditate quasi? Sit dolorum omnis laborum suscipit, perferendis repellat nemo in.</p>
+          <div class="text-center mt-4">
+            <a href="https://github.com/pclubuiet" class="btn btn-success  ">&lt;/&gt; Source code</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="cardss">
+   
+        <div class="card_content">
+          <h2 class="card_title text-center text-success">Covid-19 Detector</h2>
+          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, architecto! Ipsa vitae amet quae distinctio, magni nostrum provident temporibus at sit cupiditate tempore voluptate, dolorem iusto maxime numquam eaque explicabo.</p>
+          <div class="text-center mt-4">
+            <a href="https://github.com/pclubuiet/COVID-19-Detector-PSoC2020" class="btn btn-success  ">&lt;/&gt; Source code</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="cardss">
+
+        <div class="card_content">
+          <h2 class="card_title text-center text-success">Androiders Buddy</h2>
+          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia hic dolorem repellat beatae sequi sit velit assumenda, illo molestiae amet sint, eos tempora, explicabo delectus? Qui corporis quis facere voluptatum!</p>
+          <div class="text-center mt-4">
+            <a href="https://github.com/pclubuiet/Androiders-Buddy-PSoC2020" class="btn btn-success  ">&lt;/&gt; Source code</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="cardss">
+
+        <div class="card_content">
+          <h2 class="card_title text-center text-success">Pocket News</h2>
+          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sequi dolorum expedita repellat voluptatibus unde architecto corporis, eos natus sed ipsam fugit eum quidem illo dolorem deserunt facilis? Mollitia, molestias?</p>
+          <div class="text-center mt-4">
+            <a href="https://github.com/pclubuiet/Pocket-news-PSoC2020" class="btn btn-success  ">&lt;/&gt; Source code</a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+
+  
+<div id="ContactUs">
+  <h2 class="font-weight-Normal text-center mt-5 mb-5">Contact us</h2>
+  <div class="contactcards">
+  <div class="row ml-2 mr-2 mb-4">
+    <div class="col-sm-2">
+      <div class="card  mb-3">
+        <div class="card-body">
+          <h5 class="card-title text-success text-center">Gurnameh Singh</h5>
+          <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
+        
+          <div class="text-center mb-4">
+            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-sm-2">
+      <div class="card mb-3" >
+        <div class="card-body">
+          <h5 class="card-title text-success text-center">Archit Uniyal</h5>
+          <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
+       
+          <div class="text-center mb-4">
+            <i class="fa fa-envelope-square text-success fa-2x "aria-hidden="true"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card mb-3" >
+        <div class="card-body">
+          <h5 class="card-title text-success text-center">Ashwani Rathee</h5>
+          <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
+          <div class="text-center mb-4">
+            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
+            </div>
+        </div>
+      </div>
     </div>
 
 
-    <div class="card ml-2">
-      <div class="card-body">
-      <h4 class="text-center" >Tarun jain</h4>
-      <p class="text-center">Core Team Member</p>
-      <div class="text-center mb-4">
-      <i class="fa fa-envelope-square greencolor  fa-2x "aria-hidden="true"></i>
+ 
+ 
+    <div class="col-sm-2">
+      <div class="card  mb-3" >
+        <div class="card-body">
+          <h5 class="card-title text-success text-center">Tarun Jain</h5>
+          <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
+          <div class="text-center mb-4">
+            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card  mb-3" >
+        <div class="card-body">
+          <h5 class="card-title text-success text-center">Anshul Arora</h5>
+          <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
+          <div class="text-center mb-4">
+            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card  mb-3">
+        <div class="card-body">
+          <h5 class="card-title text-success text-center">Kshitij Saluja</h5>
+          <h6 class="card-subtitle text-success mt-3 mb-3  text-center">Core Team Member</h6>
+          <div class="text-center mb-4">
+            <i class="fa fa-envelope-square  text-success fa-2x "aria-hidden="true"></i>
+            </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="card ml-2">
-    <div class="card-body">
-    <h4 class="text-center" >Kshitij Saluja</h4>
-    <p class="text-center">Core Team Member</p>
-    <div class="text-center mb-4">
-    <i class="fa fa-envelope-square greencolor  fa-2x "aria-hidden="true"></i>
-    </div>
-  </div>
 </div>
-
-
-  <div class="card ml-2">
-    <div class="card-body">
-    <h4 class="text-center" >Anshul Arora</h4>
-    <p class="text-center">Core Team Member</p>
-    <div class="text-center mb-4">
-    <i class="fa fa-envelope-square greencolor fa-2x "aria-hidden="true"></i>
-    </div>
-  </div>
+ 
 </div>
-  </div>
- </div>
+   
 
 
 
@@ -213,7 +279,7 @@ Although the club has been functioning quite well as compared to other clubs, st
   
 
    
-    <div class="text-center p-3" style="background-color:rgba(3, 100, 24, 0.932);">
+    <div class="text-center  bg-success p-3" >
       © 2020 Copyright:
       <a class="text-white" href="https://mdbootstrap.com/">Pclubuiet.com</a>
     </div>
