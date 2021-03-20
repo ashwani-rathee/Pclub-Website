@@ -28,27 +28,43 @@
 
  <div id="particles-js" >
   <nav class="navbar fixed-top navbar-sticky-top navbar-expand-lg navbar-light ">
+    <button class="navbar-toggler text-success" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">   
+        <i class="fa fa-navicon text-success" style=" font-size:28px;"></i>
+    </span>
+    </button>
+    <div class="collapse navbar-collapse text-success" id="navbarSupportedContent">
     <ul class="nav  ml-auto text-success">
       <li class="nav-item dropdown text-success">
         <a class="nav-link text-success dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Home
         </a>
-        <div class="dropdown-menu text-success" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu text-success" aria-labelledby="navbarDropdown" >
           <a class="dropdown-item text-success" href="#AboutUs">About us</a>        
           <a class="dropdown-item text-success" href="#Projects">Projects</a>
           <a class="dropdown-item text-success" href="#ContactUs">Contact us</a>
       </li>
         <li class="nav-item text-success">
-          <a class="nav-link text-success " href="https://www.google.com/search?q=navbar+change+color+on+scroll&oq=navbar+change+colo&aqs=chrome.2.0l3j69i57j0l2j69i61l2.7487j0j7&sourceid=chrome&ie=UTF-8">Blog</a>
+          <a class="nav-link text-success " href="#">Blog</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-success" href="#">Resources</a>
+        
+        <li class="nav-item dropdown text-success">
+          <a class="nav-link text-success dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Resources
+          </a>
+          <div class="dropdown-menu text-success" aria-labelledby="navbarDropdown" >
+            <a class="dropdown-item text-success" href="#">GENERAL</a>        
+            <a class="dropdown-item text-success" href="#">CP</a>
+            <a class="dropdown-item text-success" href="#">DEV</a>
+            <a class="dropdown-item text-success" href="#">ML</a>
         </li>
         <li class="nav-item">
             <a class="nav-link text-success" href="#">PSoC</a>
           </li>
     </ul>
+    </div>
   </nav>
+ </div>
   
   <div class="text-center logo">
     <img src="output-onlinepngtools.png">
@@ -69,7 +85,9 @@
     <h2 class="font-weight-Normal text-center">  
       About Us
     </h2>
+  </div>
     <img  class="rounded mx-auto d-block"src="programmer.png" alt=""width="70"height="90">
+  
    
 <h5 class="font-weight-bold  text-success text-center">Programming club UIET</h5>
   <div class="icon">
@@ -186,11 +204,28 @@ Although the club has been functioning quite well as compared to other clubs, st
 
   
 <div id="ContactUs">
-  <h2 class="font-weight-Normal text-center mt-5 mb-5">Contact us</h2>
-  <div class="contactcards">
-  <div class="row ml-2 mr-2 mb-4">
-    <div class="col-sm-2">
-      <div class="card  mb-3">
+
+<h2 class="font-weight-Normal text-center mt-5 mb-4">Contact us</h2>
+
+  <div class="row ml-3 mr-3 mb-3">
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+      <div class="box">
+       
+        <div class="card-body">
+          <h5 class="card-title text-success text-center">Ashwani Rathee</h5>
+          <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
+          <div class="text-center mb-4">
+            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
+            </div>
+        </div>
+       
+      </div>
+      </div>
+  
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+      <div class="box">
         <div class="card-body">
           <h5 class="card-title text-success text-center">Gurnameh Singh</h5>
           <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
@@ -199,11 +234,23 @@ Although the club has been functioning quite well as compared to other clubs, st
             <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
             </div>
         </div>
-      </div>
+    </div>
     </div>
     
-    <div class="col-sm-2">
-      <div class="card mb-3" >
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+      <div class="box">
+        <div class="card-body">
+          <h5 class="card-title text-success text-center">Kshitij Saluja</h5>
+          <h6 class="card-subtitle text-success mt-3 mb-3  text-center">Core Team Member</h6>
+          <div class="text-center mb-4">
+            <i class="fa fa-envelope-square  text-success fa-2x "aria-hidden="true"></i>
+            </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+      <div class="box">
         <div class="card-body">
           <h5 class="card-title text-success text-center">Archit Uniyal</h5>
           <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
@@ -214,34 +261,9 @@ Although the club has been functioning quite well as compared to other clubs, st
         </div>
       </div>
     </div>
-    <div class="col-sm-2">
-      <div class="card mb-3" >
-        <div class="card-body">
-          <h5 class="card-title text-success text-center">Ashwani Rathee</h5>
-          <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
-          <div class="text-center mb-4">
-            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
-            </div>
-        </div>
-      </div>
-    </div>
-
-
- 
- 
-    <div class="col-sm-2">
-      <div class="card  mb-3" >
-        <div class="card-body">
-          <h5 class="card-title text-success text-center">Tarun Jain</h5>
-          <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
-          <div class="text-center mb-4">
-            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="card  mb-3" >
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+      <div class="box">
         <div class="card-body">
           <h5 class="card-title text-success text-center">Anshul Arora</h5>
           <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
@@ -251,21 +273,25 @@ Although the club has been functioning quite well as compared to other clubs, st
         </div>
       </div>
     </div>
-    <div class="col-sm-2">
-      <div class="card  mb-3">
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+      <div class="box">
         <div class="card-body">
-          <h5 class="card-title text-success text-center">Kshitij Saluja</h5>
-          <h6 class="card-subtitle text-success mt-3 mb-3  text-center">Core Team Member</h6>
+          <h5 class="card-title text-success text-center">Tarun Jain</h5>
+          <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
           <div class="text-center mb-4">
-            <i class="fa fa-envelope-square  text-success fa-2x "aria-hidden="true"></i>
+            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
             </div>
         </div>
       </div>
     </div>
-  </div>
+    
 </div>
- 
 </div>
+
+
+
+
    
 
 
