@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link rel="icon" href="favicon.ico.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet"href="style.css"id="theme-link">
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="frontvideo.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pclub | Development</title>
+    
+</head>
+<body>
+ 
+  
+
+  
+    
+  
+     
+
+ <div id="particles-js" >
+  <nav class="navbar fixed-top navbar-sticky-top navbar-expand-lg navbar-light ">
+
+    <button class="navbar-toggler text-success" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">   
+        <i class="fa fa-navicon text-success" style=" font-size:28px;"></i>
+    </span>
+    </button>
+    <div class="collapse navbar-collapse text-success" id="navbarSupportedContent">
+    <ul class="nav  ml-auto text-success">
+      <li class="nav-item dropdown text-success">
+        <a class="nav-link text-success dropdown-toggle" href="/home" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Home
+        </a>
+        <div class="dropdown-menu text-success" aria-labelledby="navbarDropdown" >
+          <a class="dropdown-item text-success" href="/about">About us</a>        
+          <a class="dropdown-item text-success" href="/Projects">Projects</a>
+          <a class="dropdown-item text-success" href="ContactUs">Contact us</a>
+      </li>
+      <li class="nav-item text-success">
+        <a class="nav-link text-success " href="http://softwarefreedomday.in/">SFD</a>
+      </li>
+        
+        <li class="nav-item dropdown text-success">
+          <a class="nav-link text-success dropdown-toggle" href="/resources" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Resources
+          </a>
+          <div class="dropdown-menu text-success" aria-labelledby="navbarDropdown" >
+            <a class="dropdown-item text-success" href="/general">GENERAL</a>        
+            <a class="dropdown-item text-success" href="/CP">CP</a>
+            <a class="dropdown-item text-success" href="/DEV">DEV</a>
+            <a class="dropdown-item text-success" href="/ML">ML</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-success" href="https://www.pclubsummerofcode.in/">PSoC</a>
+          </li>
+          <li class="nav-item">
+            <button id="demo" class=" btn  btn-toggle bg-success" onclick="myFunction()">dark mode</button>
+          </li>
+    </ul>
+    </div>
+  </nav>
+ </div>
+  
+  <div class="text-center logo">
+    <img src="output-onlinepngtools.png">
+ 
+   <script type="text/javascript" src="particles.js"></script>
+   <script type="text/javascript" src="frontvideo.js"></script>
+   
+</div>
+
+
+ 
+          </div>
+
+        
+            
+                     
+
+          
+          <script>
+
+
+
+            var change=document.getElementById("demo");
+            var image=document.getElementById("img");
+            
+                const btn = document.querySelector(".btn-toggle");
+      // Select the stylesheet <link>
+      const theme = document.querySelector("#theme-link");
+      
+      // Listen for a click on the button
+      btn.addEventListener("click", function() {
+        // If the current URL contains "ligh-theme.css"
+        
+        if (theme.getAttribute("href") == "style.css") {
+          // ... then switch it to "dark-theme.css"
+        
+          change.innerHTML="light mode";
+          theme.href = "lightmode.css";
+      
+        // Otherwise...
+        } else {
+          // ... switch it to "light-theme.css"
+        
+          theme.href = "style.css";
+          change.innerHTML="dark mode";
+        }
+      });
+                </script>
+      
+      
+  
+  
+
+         
+          <h2 class=" text-center mt-5 mb-5">  
+            Development
+          </h2>
+
+<div class="container">
+
+          <div id="accordion">
+            <div class="card mb-3 text-center">
+              <div class="card-header text-success text-center" id="headingOne">
+                
+                  <button class="btn  text-success text-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Back-end Web-devlopment
+                  </button>
+            
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                 <p class="card-text">Basic Back-end </p>
+                 <p class="card-text">What is Django ?</p>
+                 <p class="card-text">Where did it come from?</p>
+                 <p class="card-text">How popular is Django?</p>
+                 <p class="card-text">Is Django opinionated?</p>
+                 <p class="card-text">What does Django code look like?</p>
+             <div class="text-center text-success">
+                <a href="https://www.youtube.com/watch?v=Q0UEPXWSfCw&t=821s" class="btn btn-success ">Session</a>
+             </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header text-success text-center mb-3" id="headingTwo">
+             
+                  <button class="btn btn-link collapsed text-center text-success" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    PSoC 2020
+                  </button>
+                
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    <p class="card-text text-center">Androiders-Buddy</p>
+                    <div class="row">
+                      <div class="col-sm-12 text-center">
+                          <a href="https://www.youtube.com/watch?v=bNKiC8YA03I" class="btn btn-success mr-3">Session 1</a>
+                          <a href="https://www.youtube.com/watch?v=WBNRfjSDKqA" class="btn btn-success ">Session 2</a>
+                       </div>
+                  </div>
+                  <p class="card-text text-center">Pocket News</p>
+                  <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <a href="https://www.youtube.com/watch?v=9xUL1P47i5E" class="btn btn-success mr-3">Session 1</a>
+                        <a href="https://www.youtube.com/watch?v=yWB7HWGX2_s" class="btn btn-success ">Session 2</a>
+                     </div>
+                </div>
+                <p class="card-text text-center">Just Resume</p>
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                      <a href="https://www.youtube.com/watch?v=y_BWIH1R35k" class="btn btn-success mr-3">Session 1</a>
+                      <a href="https://www.youtube.com/watch?v=rkpSRU6cjB0" class="btn btn-success ">Session 2</a>
+                   </div>
+              </div>
+              <p class="card-text text-center">Customizable Portfolio </p>
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                      <a href="https://www.youtube.com/watch?v=99O30LB22FQ" class="btn btn-success mr-3">Session 1</a>
+                      <a href="https://www.youtube.com/watch?v=E-sykObcgu4&t=2s" class="btn btn-success ">Session 2</a>
+                   </div>
+              </div>
+              <p class="card-text text-center">Rotten Scripts </p>
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                      <a href="https://www.youtube.com/watch?v=ACpYXYUPqyU" class="btn btn-success mr-3">Session 1</a>
+                      <a href="https://www.youtube.com/watch?v=CFjjI82Y-Fc&t=3s" class="btn btn-success ">Session 2</a>
+                   </div>
+              </div>
+              <p class="card-text text-center">News Fresh </p>
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                    <a href="https://www.youtube.com/watch?v=alcEb4s8DYk" class="btn btn-success mr-3 ">Session 1</a>
+                    <a href="https://www.youtube.com/watch?v=eL6oCIYPUZw" class="btn btn-success ">Session 2</a>
+                 </div>
+            </div>
+            <p class="card-text text-center">Deep Pixel </p>
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                    <a href="https://www.youtube.com/watch?v=HsO6CdRyC-w" class="btn btn-success mr-3">Session 1</a>
+                    <a href="https://www.youtube.com/watch?v=X1anFg3L8NI" class="btn btn-success ">Session 2</a>
+                 </div>
+            </div>
+            <p class="card-text text-center">Github Auto-Update </p>
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                    <a href="https://www.youtube.com/watch?v=mrQa7jkSFW4" class="btn btn-success mr-3">Session 1</a>
+                    <a href="https://www.youtube.com/watch?v=21lwxu5qQqE" class="btn btn-success ">Session 2</a>
+                 </div>
+            </div>
+            <p class="card-text text-center">OpenJobApp.Org </p>
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                  <a href="https://www.youtube.com/watch?v=r-Atn7JY3L4" class="btn btn-success mr-3">Session 1</a>
+                  <a href="https://www.youtube.com/watch?v=I3tZA1P7fdA" class="btn btn-success ">Session 2</a>
+               </div>
+          </div>
+          <p class="card-text text-center">Prediction of Epidemic Outbreaks Using Social Media Data </p>
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                  <a href="https://www.youtube.com/watch?v=lLsZz37h12g&t=14s" class="btn btn-success mr-3 ">Session 1</a>
+                  <a href="https://www.youtube.com/watch?v=zvXI5tYzMFM&t=3s" class="btn btn-success ">Session 2</a>
+               </div>
+          </div>
+          <p class="card-text text-center">MultiModal Emotion Recognition </p>
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                  <a href="https://www.youtube.com/watch?v=WQCpnP-KngY" class="btn btn-success mr-3 ">Session 1</a>
+                  <a href="https://www.youtube.com/watch?v=YRS1bvV2twA" class="btn btn-success ">Session 2</a>
+               </div>
+          </div>
+          <p class="card-text text-center">Doc 2 Pen</p>
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                  <a href="https://www.youtube.com/watch?v=MdSei-Hm6WI&t=19s" class="btn btn-success mr-3 ">Session 1</a>
+                  <a href="https://www.youtube.com/watch?v=YECsDOjXzGU" class="btn btn-success ">Session 2</a>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+            <div class="card mb-3  text-center  mt-3">
+              <div class="card-header text-center text-success" id="headingThree">
+                
+                  <button class="btn btn-link collapsed text-center text-success" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    SFD 2020
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                 
+                    <p class="card-text text-center">ROS and Gazebo Opensource in Robotics</p>
+                    <div class="text-center text-success">
+                        <a href="https://www.youtube.com/watch?v=YECsDOjXzGU" class="btn btn-success ">Session</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                 
+                    <p class="card-text text-center">How To Make Your Own Game</p>
+                    <div class="text-center text-success">
+                        <a href="https://www.youtube.com/watch?v=YECsDOjXzGU" class="btn btn-success ">Session</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                 
+                    <p class="card-text text-center">Opening Note</p>
+                    <div class="text-center text-success">
+                        <a href="https://www.youtube.com/watch?v=YECsDOjXzGU" class="btn btn-success ">Session</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                 
+                    <p class="card-text text-center">NLP and Hugging Face</p>
+                    <div class="text-center text-success">
+                        <a href="https://www.youtube.com/watch?v=YECsDOjXzGU" class="btn btn-success ">Session</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                 
+                    <p class="card-text text-center">Julia and FluxML</p>
+                    <div class="text-center text-success">
+                        <a href="https://www.youtube.com/watch?v=YECsDOjXzGU" class="btn btn-success ">Session</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+
+
+
+     
+     
+     
+               
+               <footer class=" text-center text-white ">
+                <div class="text-center p-3"style="background-color:black;">
+                <img src="output-onlinepngtools.png" alt=""height="39"width="80">
+                </div>
+            
+              
+            
+               
+                <div class="text-center  bg-success p-3" >
+                  © 2020 Copyright:
+                  <a class="text-white" href="https://mdbootstrap.com/">Pclubuiet.com</a>
+                </div>
+            
+              </footer>
+     </body>
+     </html>

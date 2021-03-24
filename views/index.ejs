@@ -2,9 +2,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <link rel="icon" href="favicon.ico.png">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet"href="style.css">
+ <link rel="stylesheet"href="style.css"id="theme-link">
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
  <script src="frontvideo.js"></script>
@@ -14,7 +16,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome</title>
+    <title>Pclub</title>
     
 </head>
 <body>
@@ -28,15 +30,16 @@
 
  <div id="particles-js" >
   <nav class="navbar fixed-top navbar-sticky-top navbar-expand-lg navbar-light ">
-    <button class="navbar-toggler text-success" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <button class="navbar-toggler text-success" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon">   
         <i class="fa fa-navicon text-success" style=" font-size:28px;"></i>
     </span>
     </button>
-    <div class="collapse navbar-collapse text-success" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse text-success" id="navbarNavDropdown">
     <ul class="nav  ml-auto text-success">
       <li class="nav-item dropdown text-success">
-        <a class="nav-link text-success dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link text-success dropdown-toggle" href="/home" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Home
         </a>
         <div class="dropdown-menu text-success" aria-labelledby="navbarDropdown" >
@@ -45,28 +48,31 @@
           <a class="dropdown-item text-success" href="#ContactUs">Contact us</a>
       </li>
         <li class="nav-item text-success">
-          <a class="nav-link text-success " href="#">Blog</a>
+          <a class="nav-link text-success " href="http://softwarefreedomday.in/">SFD</a>
         </li>
         
         <li class="nav-item dropdown text-success">
-          <a class="nav-link text-success dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link text-success dropdown-toggle" href="/resources" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Resources
           </a>
           <div class="dropdown-menu text-success" aria-labelledby="navbarDropdown" >
-            <a class="dropdown-item text-success" href="#">GENERAL</a>        
-            <a class="dropdown-item text-success" href="#">CP</a>
-            <a class="dropdown-item text-success" href="#">DEV</a>
-            <a class="dropdown-item text-success" href="#">ML</a>
+            <a class="dropdown-item text-success" href="/general">GENERAL</a>        
+            <a class="dropdown-item text-success" href="/CP">CP</a>
+            <a class="dropdown-item text-success" href="/DEV">DEV</a>
+            <a class="dropdown-item text-success" href="/ML">ML</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-success" href="#">PSoC</a>
+            <a class="nav-link text-success" href="https://www.pclubsummerofcode.in/">PSoC</a>
+          </li>
+          <li class="nav-item">
+            <button id="demo" class=" btn  btn-toggle bg-success" onclick="myFunction()">dark mode</button>
           </li>
     </ul>
     </div>
   </nav>
  </div>
   
-  <div class="text-center logo">
+  <div  class="text-center logo">
     <img src="output-onlinepngtools.png">
  
    <script type="text/javascript" src="particles.js"></script>
@@ -79,14 +85,49 @@
           </div>
 
 
+     
+          
 
+          
+          <script>
+
+
+
+      var change=document.getElementById("demo");
+      var image=document.getElementById("img");
+      
+          const btn = document.querySelector(".btn-toggle");
+// Select the stylesheet <link>
+const theme = document.querySelector("#theme-link");
+
+// Listen for a click on the button
+btn.addEventListener("click", function() {
+  // If the current URL contains "ligh-theme.css"
   
-  <div class="mainbody"id="AboutUs">
-    <h2 class="font-weight-Normal text-center">  
+  if (theme.getAttribute("href") == "style.css") {
+    // ... then switch it to "dark-theme.css"
+    document.getElementById("img").src="Programmergreen.png.png";
+    change.innerHTML="light mode";
+    theme.href = "lightmode.css";
+
+  // Otherwise...
+  } else {
+    // ... switch it to "light-theme.css"
+    document.getElementById("img").src="programmer.png";
+    theme.href = "style.css";
+    change.innerHTML="dark mode";
+  }
+});
+          </script>
+
+
+      <div id="AboutUs">          
+  <div class="mainbody">
+    <h2 class=" text-center">  
       About Us
     </h2>
   </div>
-    <img  class="rounded mx-auto d-block"src="programmer.png" alt=""width="70"height="90">
+    <img id="img" class="rounded mx-auto d-block"src="programmer.png" alt=""width="70"height="90">
   
    
 <h5 class="font-weight-bold  text-success text-center">Programming club UIET</h5>
@@ -100,15 +141,15 @@
 
 
   </div>
+      </div>
 
 
 
 
 
+<div class="container aboutus">
 
-<div class="container">
-
-    <p class="font-weight-light text-center mb-7 ">
+    <p class="font-weight-light text-center mb-7 p-4 ">
 
       
 
@@ -121,7 +162,7 @@ Although the club has been functioning quite well as compared to other clubs, st
     </p>
 </div>
 <div id="Projects">
-<h2 class="font-weight-Normal text-center mt-7 mb-5">Projects</h2>
+<h2 class=" text-center mt-7 mb-5">Projects</h2>
 <div class="main">
  
   <ul class="cards">
@@ -130,8 +171,8 @@ Although the club has been functioning quite well as compared to other clubs, st
       
         <div class="card_content">
           <h2 class="card_title text-center text-success">hacktoberfest</h2>
-          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptatem sint facilis, repellendus distinctio quia accusamus quae, veniam aliquid reprehenderit optio necessitatibus molestiae, facere et ut hic. Distinctio, est ea.</p>
-          <div class="text-center mt-4">
+          <p class="card_text text-center font-weight-light">Demo of pixel perfect Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, id. quaerat praesentium suscipit architecto. repellendus natus! Eos. ut quod,reiciendis hic vitae amet a, doloribus natus similique vel temporibus blanditiis ex repellendus molestias ipsam quasi pariatur laudantium quo. pure CSS simple responsive card grid layout Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptatem sint facilis, repellendus distinctio quia accusamus quae, veniam aliquid reprehenderit optio necessitatibus molestiae, facere et ut hic. Distinctio, est ea.</p>
+          <div class="text-center mb-4">
             <a href="https://github.com/pclubuiet/Hacktoberfest-2k19" class="btn btn-success  "> &lt;/&gt; Source code</a>
           </div>
         </div>
@@ -142,8 +183,9 @@ Although the club has been functioning quite well as compared to other clubs, st
        
         <div class="card_content">
           <h2 class="card_title text-center text-success">Software freedom Day</h2>
-          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, quibusdam vitae eum ipsum laboriosam culpa accusantium sequi voluptatum provident. Eum inventore magnam quibusdam numquam et amet nobis nemo neque alias.</p>
-          <div class="text-center mt-4">
+          <p class="card_text text-center font-weight-light">
+            Software Freedom Day is an event held all across the world to celebrate the usage of Free and Open Source Software. The event aims to sensitize students about the virtues of Open Source Software. Each year the event has seen growing number of participants and our past speakers have come from prestigious software companies like Facebook, Microsoft and Google . The aim of SFD is to bring together developers and students of all levels on a single platform to share their thoughts, ideas and inspirations. This year, Programming Club of UIET brings to you the 11th Edition of Software Freedom Day on September 19,2020 & September 20,2020.</p>
+          <div class="text-center mb-4">
             <a href="https://github.com/pclubuiet/sfd19-slides" class="btn btn-success  ">&lt;/&gt; Source code</a>
           </div>
         </div>
@@ -154,8 +196,8 @@ Although the club has been functioning quite well as compared to other clubs, st
   
         <div class="card_content">
           <h2 class="card_title text-center text-success">PSoC</h2>
-          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium alias dolorum quidem inventore totam rerum aperiam sunt cum, illum, cupiditate quasi? Sit dolorum omnis laborum suscipit, perferendis repellat nemo in.</p>
-          <div class="text-center mt-4">
+          <p class="card_text text-center font-weight-light">PClub Summer of Code is the 2 month Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, vitae. long Open Source program during summers conducted by Programming Club, UIET, with an aim to help beginners get started with Open Source Development while encouraging diversity. Throughout the program, participants contribute to different projects under guidance of experienced mentors. Mentors get to make their ideas alive and Mentees get to learn tech.PSoC is targeted at audience who want to dwell in OpenSource Development as well as who are already into FOSS development.This program will help students for other opensource programs like Gsoc, Outreachy, etc. </p>
+          <div class="text-center mb-4">
             <a href="https://github.com/pclubuiet" class="btn btn-success  ">&lt;/&gt; Source code</a>
           </div>
         </div>
@@ -166,8 +208,8 @@ Although the club has been functioning quite well as compared to other clubs, st
    
         <div class="card_content">
           <h2 class="card_title text-center text-success">Covid-19 Detector</h2>
-          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, architecto! Ipsa vitae amet quae distinctio, magni nostrum provident temporibus at sit cupiditate tempore voluptate, dolorem iusto maxime numquam eaque explicabo.</p>
-          <div class="text-center mt-4">
+          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati harum impedit voluptates cumque fugiat perspiciatis repellendus accusamus quisquam natus earum odio delectus dolorem nulla quidem libero quibusdam repudiandae ex beatae laboriosam atque quod asperiores, recusandae suscipit autem! Exercitationem, magni deserunt. consectetur adipisicing elit. Repellendus, architecto! Ipsa vitae amet quae distinctio, magni nostrum provident temporibus at sit cupiditate tempore voluptate, dolorem iusto maxime numquam eaque explicabo.</p>
+          <div class="text-center ">
             <a href="https://github.com/pclubuiet/COVID-19-Detector-PSoC2020" class="btn btn-success  ">&lt;/&gt; Source code</a>
           </div>
         </div>
@@ -178,9 +220,12 @@ Although the club has been functioning quite well as compared to other clubs, st
 
         <div class="card_content">
           <h2 class="card_title text-center text-success">Androiders Buddy</h2>
-          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia hic dolorem repellat beatae sequi sit velit assumenda, illo molestiae amet sint, eos tempora, explicabo delectus? Qui corporis quis facere voluptatum!</p>
-          <div class="text-center mt-4">
-            <a href="https://github.com/pclubuiet/Androiders-Buddy-PSoC2020" class="btn btn-success  ">&lt;/&gt; Source code</a>
+          <p class="card_text text-center font-weight-light">Android development is a very sought after skill today Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsum corporis eveniet mollitia excepturi! Voluptatem, iste? Magni nobis quis ut. in the technology industry, and we believe this project will help the mentees become familiar with many of its specificities and prepare them for more advanced coursework in Android development. 
+            Hence we developed this beginner friendly project aimed to make beginners in Android Development get acquainted with the basic topic/concepts of Android Studio. 
+            Androiders buddy is a repository that contains projects for all the topics of android. 
+            </p>
+          <div class="text-center mb-4">
+            <a href="https://github.com/VBSquad/Androiders-Buddy" class="btn btn-success  ">&lt;/&gt; Source code</a>
           </div>
         </div>
       </div>
@@ -190,22 +235,204 @@ Although the club has been functioning quite well as compared to other clubs, st
 
         <div class="card_content">
           <h2 class="card_title text-center text-success">Pocket News</h2>
-          <p class="card_text text-center font-weight-light">Demo of pixel perfect pure CSS simple responsive card grid layout Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sequi dolorum expedita repellat voluptatibus unde architecto corporis, eos natus sed ipsam fugit eum quidem illo dolorem deserunt facilis? Mollitia, molestias?</p>
-          <div class="text-center mt-4">
-            <a href="https://github.com/pclubuiet/Pocket-news-PSoC2020" class="btn btn-success  ">&lt;/&gt; Source code</a>
-          </div>
+          <p class="card_text text-center font-weight-light">Pocket news is a cross platform app made with flutter framework that gives you the top 30 news feed in just one tap of your finger. It is backed with Firebase authentication services so just register yourself and login to get all top international and national happenings in just less than 1 seconds. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium hic dolore animi at sit commodi porro repudiandae, aliquid, fuga ab cumque magni dolorum consequuntur temporibus iste voluptas distinctio, tenetur voluptate earum dignissimos pariatur quod quia officia voluptatum. Deserunt, sapiente excepturi. </p>
+        </div>
+        <div class="text-center  mb-2">
+          <a href="https://github.com/ankay212000/News_app_2.0" class="btn btn-success  ">&lt;/&gt; Source code</a>
         </div>
       </div>
+    
     </li>
   </ul>
 </div>
 </div>
 
 
+<div class="timeline mt-5 mb-5 ">
+  
+<h2 class="text-center  mb-5">Timeline</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="timeline-container">
+          <div class="timeline-end">
+            <p>Now</p>
+          </div>
+          <div class="timeline-continue">
+
+            <div class="row timeline-right">
+              <div class="col-md-6">
+                <p class="timeline-date">
+                  01 Jun 2020
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="timeline-box">
+                  <div class="timeline-icon">
+                    <i class="fa fa-gift"></i>
+                  </div>
+                  <div class="timeline-text">
+                    <h3 class="text-success">GSOC 2020</h3>
+                    <p class="font-weight-light">Three student from the club got selected for one of the most prestigious open-source software development programs - Google Summer of Code. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row timeline-left">
+              <div class="col-md-6 d-md-none d-block">
+                <p class="timeline-date">
+                  01 Jan 2020
+                </p>
+              </div>
+              <div class="col-md-6">
+               
+                <div class="timeline-box">
+                  <div class="timeline-icon d-md-none d-block">
+                    <i class="fa fa-code"></i>
+                  </div>
+                  <div class="timeline-text">
+                    <h3 class="text-success">Pclub recruitment</h3>
+                    <p class="font-weight-light">Pclub started their recruitment with total registered candidate 100 out of 100 20 got selected for the core team</p>
+                  </div>
+                  <div class="timeline-icon d-md-block d-none">
+                    <i class="fa fa-business-time"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 d-md-block d-none">
+                <p class="timeline-date">
+                  01 Jan 2020
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="timeline-year">
+                  <p>2020</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row timeline-right">
+              <div class="col-md-6">
+                <p class="timeline-date">
+                  01 Dec 2019
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="timeline-box">
+                  <div class="timeline-icon">
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                  <div class="timeline-text">
+                    <h3 class="text-success">PSoC 2020</h3>
+                    <p class="font-weight-light">Due to covid 19 a virtual open source summer project PSoC was organised and various mentee across the country has succesfully registered for their project </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row timeline-left">
+              <div class="col-md-6 d-md-none d-block">
+                <p class="timeline-date">
+                  01 Sep  2019
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="timeline-box">
+                  <div class="timeline-icon d-md-none d-block">
+                    <i class="fa fa-cogs"></i>
+                  </div>
+                  <div class="timeline-text">
+                    <h3 class="text-success">SFD 2019</h3>
+                    <p class="font-weight-light">Three day long Software freedom day was organised  by pclub were diffrent mentor accrosed the world has taken part and share their career story toward their work </p>
+                  </div>
+                  <div class="timeline-icon d-md-block d-none">
+                    <i class="fa fa-cogs"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 d-md-block d-none">
+                <p class="timeline-date">
+                  01 Sep  2019
+                </p>
+              </div>
+            </div>
+
+            <div class="row timeline-right">
+              <div class="col-md-6">
+                <p class="timeline-date">
+                  01 Jun 2019
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="timeline-box">
+                  <div class="timeline-icon">
+                    <i class="fa fa-running"></i>
+                  </div>
+                  <div class="timeline-text">
+                    <h3 class="text-success">PSoC  2019</h3>
+                    <p class="font-weight-light">Pclub organized a two months long Summer Camp online. More than 500 students across the country participated in the camp. The camp covered all the three major domains of Computer Science, namely Algorithms and Data Structures (Competitive Programming), Machine Learning and Development (Android and Web). </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row timeline-left">
+              <div class="col-md-6 d-md-none d-block">
+                <p class="timeline-date">
+                  01 Mar 2019
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="timeline-box">
+                  <div class="timeline-icon d-md-none d-block">
+                    <i class="fa fa-home"></i>
+                  </div>
+                  <div class="timeline-text">
+                    <h3 class="text-success">Programming club</h3>
+                    <p class="font-weight-light">Programming club uiet was formed</p>
+                  </div>
+                  <div class="timeline-icon d-md-block d-none">
+                    <i class="fa fa-flag"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 d-md-block d-none">
+                <p class="timeline-date">
+                  01 Mar 2019
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-start">
+            <p>Formed</p>
+          </div>
+          <div class="timeline-launch">
+            <div class="timeline-box">
+              <div class="timeline-text">
+                <h3 class="text-success">Programming club uiet</h3>
+                <p class="font-weight-light">Programming club was formed for the motive to guide newbie programmer </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+  
+
   
 <div id="ContactUs">
 
-<h2 class="font-weight-Normal text-center mt-5 mb-4">Contact us</h2>
+<h2 class=" text-center  mb-4">Contact us</h2>
 
   <div class="row ml-3 mr-3 mb-3">
     
@@ -216,7 +443,9 @@ Although the club has been functioning quite well as compared to other clubs, st
           <h5 class="card-title text-success text-center">Ashwani Rathee</h5>
           <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
           <div class="text-center mb-4">
-            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
+            <a href="mailto:ab669522@gmail.com"><i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i></a>
+            <a href="https://github.com/ashwani-rathee" ><i class="fa fa-github-square fa-2x text-success"aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/ashwani-rathee-0b7594192"><i class=" fa fa-linkedin-square fa-2x text-success"></i></a>
             </div>
         </div>
        
@@ -231,7 +460,9 @@ Although the club has been functioning quite well as compared to other clubs, st
           <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
         
           <div class="text-center mb-4">
-            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
+            <a href="mailto:gurunameh.work@gmail.com"><i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i></a>
+            <a href="https://github.com/gurnameh-99" ><i class="fa fa-github-square fa-2x text-success"aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/gurunameh-singh-80222618b"><i class=" fa fa-linkedin-square fa-2x text-success"></i></a>
             </div>
         </div>
     </div>
@@ -243,7 +474,9 @@ Although the club has been functioning quite well as compared to other clubs, st
           <h5 class="card-title text-success text-center">Kshitij Saluja</h5>
           <h6 class="card-subtitle text-success mt-3 mb-3  text-center">Core Team Member</h6>
           <div class="text-center mb-4">
-            <i class="fa fa-envelope-square  text-success fa-2x "aria-hidden="true"></i>
+            <a href="mailto:kshitijsaluja99@gmail.com"><i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i></a>
+            <a href="https://github.com/Kshitij-Saluja" ><i class="fa fa-github-square fa-2x text-success"aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/kshitij-saluja-6a4536172/"><i class=" fa fa-linkedin-square fa-2x text-success"></i></a>
             </div>
       </div>
     </div>
@@ -256,7 +489,9 @@ Although the club has been functioning quite well as compared to other clubs, st
           <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
        
           <div class="text-center mb-4">
-            <i class="fa fa-envelope-square text-success fa-2x "aria-hidden="true"></i>
+            <a href="mailto:archituniyal.dev@gmail.com"><i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i></a>
+            <a href="https://github.com/archit31uniyal" ><i class="fa fa-github-square fa-2x text-success"aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/uniyalarchit"><i class=" fa fa-linkedin-square fa-2x text-success"></i></a>
             </div>
         </div>
       </div>
@@ -268,7 +503,9 @@ Although the club has been functioning quite well as compared to other clubs, st
           <h5 class="card-title text-success text-center">Anshul Arora</h5>
           <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
           <div class="text-center mb-4">
-            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
+            <a href="mailto:anshul1342k@gmail.com"><i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i></a>
+            <a href="https://github.com/Anshul1342" ><i class="fa fa-github-square fa-2x text-success"aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/anshul-arora-535337194/"><i class=" fa fa-linkedin-square fa-2x text-success"></i></a>
             </div>
         </div>
       </div>
@@ -280,27 +517,30 @@ Although the club has been functioning quite well as compared to other clubs, st
           <h5 class="card-title text-success text-center">Tarun Jain</h5>
           <h6 class="card-subtitle mt-3 mb-3 text-success text-center">Core Team Member</h6>
           <div class="text-center mb-4">
-            <i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i>
+           
+            <a href="mailto:tarunjain3820@gmail.com"><i class="fa fa-envelope-square text-success  fa-2x "aria-hidden="true"></i></a>
+            <a href="https://github.com/tarunjain3" ><i class="fa fa-github-square fa-2x text-success"aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/tarun38/"><i class=" fa fa-linkedin-square fa-2x text-success"></i></a>
             </div>
         </div>
       </div>
     </div>
     
 </div>
+
+
 </div>
 
-
-
-
-   
 
 
 
 
  
 
-  <footer class=" text-center text-white"style="background-color:black;">
-    <img src="logo-white-black-bg-removebg-preview_1.png" alt=""height="100"width="220">
+  <footer class=" text-center text-white ">
+    <div class="text-center p-3"style="background-color:black;">
+    <img src="output-onlinepngtools.png" alt=""height="35"width="80">
+    </div>
 
   
 

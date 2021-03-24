@@ -1,10 +1,43 @@
+body{
+  background-color: black !important;
+}
+.timeline-box{
+  background-color:black !important;
+  color: white !important;
+}
+.timeline-box h3{
+  color:#24bb16 !important;
+}
+.timeline-box i{
+color:#24bb16 !important;
+}
 
-    .mainbody h2,p,h5{
+#AboutUs{
+  background-color: black;
+
+}
+.toggle{
+  background-color: black;
+  color: white;
+}
+.mainbody{
+    background-color: black;
+}
+#Projects{
+    background-color: black;
+    color: white;
+}
+.container{
+    background-color: black;
+    color: white;
+}
+ .mainbody h2,p,h5{
       padding-top: 1rem;
     }
    
    h2{
      font-family: 'Quicksand';
+     color:rgb(34, 226, 17)
    }
    
     .icon a{
@@ -15,7 +48,9 @@
      
       text-align: center;
     }
-    
+    .aboutus{
+      box-shadow: 0 20px 40px -14px rgba(11, 196, 11, 0.692);
+    }
     #particles-js{
       height: 300px;
       background:black;
@@ -61,31 +96,7 @@
     }
    
 
-    @media (min-width: 56rem) {
-      .card {
-        width: 33.3333%;
-      }
-    }
-    @media (min-width: 52rem) {
-      .card {
-        width: 37%;
-      }
-    }
-  
-    @media (min-width: 48rem) {
-      .card {
-        width: 100% ;
-        background-color: brown;
-      }
-    }
-
-
-
-    @media(min-width:40rem){
-  .card{
-  width:100%;
-  }
-}
+ 
 
 
     .cards {
@@ -94,6 +105,7 @@
       list-style: none;
       margin: 0;
       padding: 0;
+    
     }
     
     .cards_item {
@@ -116,10 +128,16 @@
     .cardss {
      
       border-radius: 0.25rem;
-      box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 20px 40px -14px rgba(11, 196, 11, 0.692);
       display: flex;
       flex-direction: column;
       overflow: hidden;
+    }
+    .dropdown-menu{
+      background-color: black !important;
+    }
+    .dropdown-item{
+      background-color: black !important;
     }
     
     .card_content {
@@ -136,9 +154,9 @@
       margin: 0px;
     }
     .navbar{
-      
+      border-color: whitesmoke;
       background-color: black;
-     
+      border-bottom: 2px solid;
       opacity: 1;
       filter: alpha(opacity=50); 
     }
@@ -150,21 +168,26 @@
       padding: 10px;
       width: 100%;
       min-height: 200px;
-     
+     background-color: black;
+     color:white;
       border-radius: 0.25rem;
-      box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 20px 40px -14px rgba(11, 196, 11, 0.692);
 
       color: rgba(20, 20, 20, 0.753);
     }
 .container{
   margin-top: 2rem;
   margin-bottom: 3rem;
+  background-color: black !important;
 }
 .mainbody{
   margin-top: 3rem;
 }
 .dropdown-toggle::after {
   display: none !important;
+}
+.container .card {
+  background-color: black !important;
 }
 
 
@@ -190,6 +213,14 @@
       position: relative;
       width: 100%;
       padding: 30px 0;
+      background-color: black;
+    }
+    .timeline-date{
+        color: rgb(11, 226, 65);
+    }
+    #ContactUs
+    {
+        background-color: black;
     }
     
     .timeline .timeline-container {
@@ -216,9 +247,10 @@
       padding: 30px 0;
       text-align: center;
       background: linear-gradient(#24bb16,#24bb16);
+     
       border-radius: 100px;
       box-shadow: 0 0 5px rgba(0, 0, 0, .4);
-      color: #ffffff;
+      color: black;
       font-size: 14px;
       text-transform: uppercase;
     }
@@ -268,7 +300,7 @@
       height: 14px;
       top: 45px;
       background: linear-gradient(#24bb16,#24bb16);
-      box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+      box-shadow: 0 20px 40px -14px rgba(11, 196, 11, 0.692);
       border-radius: 15px;
       z-index: 1;
     }
@@ -287,9 +319,10 @@
       display: inline-block;
       margin: 15px;
       padding: 20px;
-      border: 1px solid #dddddd;
+      border: 1px solid rgb(18, 233, 29);
+      box-shadow: 0 20px 40px -14px rgba(11, 196, 11, 0.692);
       border-radius: 6px;
-      background: #ffffff;
+      background: black;
     }
     
     .timeline .timeline-launch {
@@ -329,32 +362,39 @@
     
     .timeline .timeline-box::after {
       top: 26px;
-      border-color: transparent transparent transparent #ffffff;
+      border-color: transparent transparent transparent #24bb16;
+      box-shadow: 0 20px 40px -14px rgba(11, 196, 11, 0.692);
+      ;
       border-width: 10px;
     }
     
     .timeline .timeline-box::before {
       top: 25px;
-      border-color: transparent transparent transparent #dddddd;
+      border-color: transparent transparent transparent #24bb16;
+      box-shadow: 0 20px 40px -14px rgba(11, 196, 11, 0.692);
       border-width: 11px;
     }
     
     .timeline .row.timeline-right .timeline-box::after {
-      border-color: transparent #ffffff transparent transparent;
+      border-color: transparent #24bb16 transparent transparent;
+    
     }
     
     .timeline .row.timeline-right .timeline-box::before {
-      border-color: transparent #dddddd transparent transparent;
+      border-color: transparent #24bb16 transparent transparent;
+   
     }
     
     .timeline .timeline-launch .timeline-box::after {
       top: -20px;
-      border-color: transparent transparent #dddddd transparent;
+      border-color: transparent transparent #24bb16 transparent;
+      box-shadow: 0 20px 40px -14px rgba(11, 196, 11, 0.692);
     }
     
     .timeline .timeline-launch .timeline-box::before {
       top: -19px;
-      border-color: transparent transparent #ffffff transparent;
+      border-color: transparent transparent #24bb16 transparent;
+      box-shadow: 0 20px 40px -14px rgba(11, 196, 11, 0.692);
       border-width: 10px;
       z-index: 1;
     }
@@ -426,12 +466,15 @@
     
       .timeline .row.timeline-left .timeline-box::after {
         left: -20px;
-        border-color: transparent #ffffff transparent transparent;
+        border-color: transparent #24bb16 transparent transparent;
+        box-shadow: 0 20px 40px -14px rgba(11, 196, 11, 0.692);
       }
     
       .timeline .row.timeline-left .timeline-box::before {
         left: -22px;
-        border-color: transparent #dddddd transparent transparent;
+        border-color: transparent #24bb16 transparent transparent;
+      
+      box-shadow: 0 20px 40px -14px rgba(11, 196, 11, 0.692);
       }
     
       .timeline .timeline-launch .timeline-box::after,
@@ -440,12 +483,12 @@
         margin-left: 0;
       }
     }
-.timeline-box{
-  
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
+    .card{
+      box-shadow:0 20px 40px -14px rgba(11, 196, 11, 0.692) ;
+    }
+    .card-body{
+      background-color: black !important;
+    }
+    #accordion{
+      background-color: black !important;
+    }

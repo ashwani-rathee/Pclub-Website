@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="icon" href="favicon.ico.png">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet"href="style.css"id="theme-link">
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="frontvideo.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pclub | CP</title>
+    
+</head>
+<body>
+ 
+  
+
+  
+    
+  
+     
+
+ <div id="particles-js" >
+  <nav class="navbar fixed-top navbar-sticky-top navbar-expand-lg navbar-light ">
+
+    <button class="navbar-toggler text-success" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">   
+        <i class="fa fa-navicon text-success" style=" font-size:28px;"></i>
+    </span>
+    </button>
+    <div class="collapse navbar-collapse text-success" id="navbarSupportedContent">
+    <ul class="nav  ml-auto text-success">
+      <li class="nav-item dropdown text-success">
+        <a class="nav-link text-success dropdown-toggle" href="/home" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Home
+        </a>
+        <div class="dropdown-menu text-success" aria-labelledby="navbarDropdown" >
+          <a class="dropdown-item text-success" href="/about">About us</a>        
+          <a class="dropdown-item text-success" href="/Projects">Projects</a>
+          <a class="dropdown-item text-success" href="ContactUs">Contact us</a>
+      </li>
+        
+      <li class="nav-item text-success">
+        <a class="nav-link text-success " href="http://softwarefreedomday.in/">SFD</a>
+      </li>
+        
+        <li class="nav-item dropdown text-success">
+          <a class="nav-link text-success dropdown-toggle" href="/resources" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Resources
+          </a>
+          <div class="dropdown-menu text-success" aria-labelledby="navbarDropdown" >
+            <a class="dropdown-item text-success" href="/general">GENERAL</a>        
+            <a class="dropdown-item text-success" href="/CP">CP</a>
+            <a class="dropdown-item text-success" href="/DEV">DEV</a>
+            <a class="dropdown-item text-success" href="/ML">ML</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-success" href="https://www.pclubsummerofcode.in/">PSoC</a>
+          </li>
+          <li class="nav-item">
+            <button id="demo" class=" btn  btn-toggle bg-success" onclick="myFunction()">dark mode</button>
+          </li>
+    </ul>
+    </div>
+  </nav>
+ </div>
+  
+  <div class="text-center logo">
+    <img src="output-onlinepngtools.png">
+ 
+   <script type="text/javascript" src="particles.js"></script>
+   <script type="text/javascript" src="frontvideo.js"></script>
+   
+</div>
+
+ 
+          
+
+          
+<script>
+
+
+
+  var change=document.getElementById("demo");
+  var image=document.getElementById("img");
+  
+      const btn = document.querySelector(".btn-toggle");
+// Select the stylesheet <link>
+const theme = document.querySelector("#theme-link");
+
+// Listen for a click on the button
+btn.addEventListener("click", function() {
+// If the current URL contains "ligh-theme.css"
+
+if (theme.getAttribute("href") == "style.css") {
+// ... then switch it to "dark-theme.css"
+
+change.innerHTML="light mode";
+theme.href = "lightmode.css";
+
+// Otherwise...
+} else {
+// ... switch it to "light-theme.css"
+theme.href = "style.css";
+change.innerHTML="dark mode";
+}
+});
+      </script>
+
+
+
+
+<h2 class=" text-center mt-5 mb-5">  
+    Competitive Programming Resources
+  </h2>
+
+ 
+    
+
+         
+        
+
+      <div class="container">
+        <div id="accordion">
+            <div class="card mb-3 text-center">
+              <div class="card-header text-success text-center" id="headingOne">
+                
+                  <button class="btn  text-success text-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Platform To Practice
+                  </button>
+            
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <a class="card-text text-success"href="https://www.codechef.com/">Codechef</p></a>
+                    <a class="card-text text-success"href="https://codeforces.com/">Codeforce</p></a>
+                    <a class="card-text text-success"href="https://leetcode.com/">Leetcode</p></a>
+                    <a class="card-text text-success"href="https://atcoder.jp/contests/">AtCoder</p></a>
+                    <a class="card-text text-success"href="https://www.topcoder.com/">TopCoder</p></a>
+                    <a class="card-text text-success"href="https://www.spoj.com/users/lebron/">SPOJ</p></a>
+                    <a class="card-text text-success"href="https://www.hackerrank.com/dashboard">Hackerrank</p></a>
+                    <a class="card-text text-success"href="https://www.hackerearth.com/challenges/">HackerEarth</p></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header text-success text-center mb-3" id="headingTwo">
+             
+                  <button class="btn btn-link collapsed text-center text-success" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Problem Solving books
+                  </button>
+                
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                 <p class="card_text"># A Path to Combinatorics for Undergraduates </p>
+                 <p class="card-text"># Competitive Programmers Handbook - Antti Laaksonen - July 2018</p>
+                 <p class="card-text"># Competitive Programming 3 - The New Lower Bound of Programming Contests</p>
+                 <p class="card-text"># Cracking the Coding Interview 189 Programming Questions and Solutions</p>
+                 <p class="card-text"># Elements of Programming Interviews - The Insider's Guide - Adnan Aziz, Tsung-Hsien Lee, Amit Prakash</p>
+                 <p class="card-text"># Guide to Competitive Programming - Learning and Improving Algorithms ThroughContests</p>
+                 <p class="card-text"># Fifty Challenging Problems in Probability. - Fredrick Mosteller</p>
+                 <p class="card-text"># How to Solve It - A New Aspect of Mathematical Method</p>
+                 <p class="card-text"># Problem Books in Mathematics - by K. Bencsath P.R. Halmos</p>
+                 <p class="card-text"># The Art and Craft of Problem Solving, 3rd Edition</p>
+                 <p class="card-text"># Cracking the Coding Interview: 150 Programming Questions and Solutions</p>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3  text-center">
+              <div class="card-header text-center text-success" id="headingThree">
+                
+                  <button class="btn btn-link collapsed text-center text-success" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Online Coding Hackathons and Competitions
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <a class=" card-text text-success"href="https://codingcompetitions.withgoogle.com/kickstart">Google Kickstart</a>
+                  <p class="card-text text-center">Kick Start is a global online coding competition, consisting of three-hour rounds of a variety of algorithmic challenges designed by Google engineers. Participants can compete in one or all online rounds held throughout the year, and will have the opportunity to develop and grow their programming abilities while getting a glimpse into the technical skills needed for a career at Google (top participants may be invited to interview at Google).</p>
+                  <a class=" card-text text-success"href="https://codingcompetitions.withgoogle.com/codejam">Google Code Jam </a>
+                  <p class="card-text text-center">Google’s longest running global coding competition, Code Jam, calls on programmers around the world to solve challenging, algorithmic puzzles against the clock. Contestants advance through four online-hosted rounds to compete at the annual Code Jam World Finals that is held at a different international Google office each year. Each round brings new challenges, and in the end 25 contestants will have the ultimate chance to put their skills to the test, vying for cash prizes and the coveted championship title at the World Finals.</p>
+                  <a class=" card-text text-success"href="https://codingcompetitions.withgoogle.com/hashcode/">Google Hash Code</a>
+                  <p class="card-text text-center">Google’s team-based programming competition, Hash Code, allows you to share your skills and connect with other coders as you work together to solve a problem modeled off a real Google engineering challenge! In small teams of two to four, coders all over the world will tackle the first problem through an Online Qualification Round. Though this round is hosted online, teams can come together to compete side-by-side in locally coordinated Hash Code hubs. The top teams from this round are invited to join us at an international Google office for our annual Hash Code Final Round.</p>
+                  <a class=" card-text text-success"href="https://www.facebook.com/codingcompetitions/hacker-cup/">Facebook Hacker Cup</a>
+                  <p class="card-text text-center">Hacker Cup is Facebook's annual open programming competition. Open to participants around the world, we invite you to apply problem-solving and algorithmic coding skills to advance through each year’s online rounds, win prizes, and have a chance to make it to the global finals and win the grand prize.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3  text-center">
+                <div class="card-header text-center text-success" id="headingFour">
+                  
+                    <button class="btn btn-link collapsed text-center text-success" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Interview Preparation
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    <a class="card-text text-success"href="https://www.codechef.com/">GeekForGeek</p></a>
+                    <a class="card-text text-success"href="https://codeforces.com/">Pramp</p></a>
+                    <a class="card-text text-success"href="https://leetcode.com/">Leetcode</p></a>
+                    <a class="card-text text-success"href="https://interviewing.io/">interviewing.io</p></a>
+                    <a class="card-text text-success"href="https://www.interviewbit.com/">InterviewBit</p></a>
+
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3  text-center">
+                <div class="card-header text-center text-success" id="headingFive">
+                  
+                    <button class="btn btn-link collapsed text-center text-success" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Video Tutorials
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                    <a class="card-text text-success"href="https://www.youtube.com/channel/UCBr_Fu6q9iHYQCh13jmpbrg">Errichto</p></a>
+                    <a class="card-text text-success"href="https://www.youtube.com/channel/UCKuDLsO0Wwef53qdHPjbU2Q">William Lin</p></a>
+                 
+
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+
+
+          <footer class=" text-center text-white ">
+            <div class="text-center p-3"style="background-color:black;">
+            <img src="output-onlinepngtools.png" alt=""height="39"width="80">
+            </div>
+        
+          
+        
+           
+            <div class="text-center  bg-success p-3" >
+              © 2020 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">Pclubuiet.com</a>
+            </div>
+        
+          </footer>
+</body>
+</html>
