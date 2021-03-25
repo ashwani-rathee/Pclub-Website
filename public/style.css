@@ -61,31 +61,10 @@
     }
    
 
-    @media (min-width: 56rem) {
-      .card {
-        width: 33.3333%;
-      }
-    }
-    @media (min-width: 52rem) {
-      .card {
-        width: 37%;
-      }
-    }
-  
-    @media (min-width: 48rem) {
-      .card {
-        width: 100% ;
-        background-color: brown;
-      }
-    }
 
 
+   
 
-    @media(min-width:40rem){
-  .card{
-  width:100%;
-  }
-}
 
 
     .cards {
