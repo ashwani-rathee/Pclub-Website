@@ -18,9 +18,13 @@ app.use('/about',require('./routes/index'));
 app.use('/Projects',require('./routes/index'));
 app.use('/ContactUs',require('./routes/index'));
 app.use('/general',require('./routes/index'));
+app.use('/Timeline',require('./routes/index'));
+app.use('/UpcomingEvents',require('./routes/index'));
 app.use('/CP',require('./routes/index'));
 app.use('/ML',require('./routes/index'));
 app.use('/DEV',require('./routes/index'));
+app.use('/blogs',require('./routes/index'));
+
 
 
 

@@ -492,3 +492,31 @@ color:#24bb16 !important;
     #accordion{
       background-color: black !important;
     }
+
+    .date-pos span {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    .bg-info-gradiant {
+        background: #0a8a05;
+        background: -webkit-linear-gradient(legacy-direction(to right), #1f8d03 0%, #05a820 100%);
+        background: -webkit-gradient(linear, left top, right top, from(#05a820), to(#05a820));
+        background: -webkit-linear-gradient(left, #05a820 0%,#05a820 100%);
+        background: -o-linear-gradient(left, #05a820 0%, #05a820 100%);
+        background: linear-gradient(to right, #05a820 0%, #05a820 100%);
+    }
+   
+    .col-sm{
+      box-shadow:0 20px 40px -14px rgba(11, 196, 11, 0.692) ;
+    }
+    .card-body{
+      color:white;
+    }
+    .info-button {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 5px;
+  }
+  
